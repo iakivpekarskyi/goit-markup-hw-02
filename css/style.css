@@ -1,0 +1,22 @@
+/* ROOT  */
+
+:root {
+  --main-color-text: #212121;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+body {
+  color: var(--main-color-text)
+  font-family: roboto;
+}
+button {
+  font-family: inherit;
+}
+
+/* ROOT  */
