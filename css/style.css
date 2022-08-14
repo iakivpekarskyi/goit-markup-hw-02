@@ -33,6 +33,7 @@ body {
   font-family: raleway, sans-serif;
   font-size: 26px;
   line-height: 1.19;
+  font-style: normal;
 }
 
 .logo-header {
@@ -44,7 +45,6 @@ body {
 }
 
 /* Navigation  */
-
 
 .site-nav .link {
   color: var(--main-color-text);
@@ -93,7 +93,7 @@ body {
 
 .button {
   color: var(--white-color);
-  background-color: var(--accent-color); 
+  background-color: var(--accent-color);
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -108,12 +108,12 @@ button:hover {
 /* Feature  */
 
 .feature-title {
+  color: var(--main-color-text);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--main-color-text);
 }
 
 .feature-text {
@@ -125,13 +125,10 @@ button:hover {
   color: var(--secondary-color-text);
 }
 
-
-
 /* Section */
 
-
 .section {
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
 }
 
 .section-card {
@@ -144,7 +141,6 @@ button:hover {
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--main-color-text);
-  
 }
 .section-title {
   font-weight: 500;
@@ -159,4 +155,38 @@ button:hover {
   line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--secondary-color-text);
+}
+
+/* Footer  */
+
+.footer-section {
+  background-color: var(--hero-background);
+}
+
+.logo .logo-footer {
+}
+
+address .link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color-text);
+}
+
+address .link-email,
+address .link-phone {
+  color: var(--white-color);
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+address .link-email:hover,
+address .link-phone:hover {
+  color: var(--accent-color);
 }
