@@ -1,3 +1,25 @@
+:root {
+  --main-color-text: #212121;
+  --secondary-color-text: #757575;
+  --accent-color: #2196f3;
+  --white-color: #ffffff;
+  --team-background: #f5f4fa;
+  --hero-background: #2f303a;
+  --port-button: #f5f4fa;
+  --primary-font: roboto, sans-serif;
+  --header-font: #000000;
+  --footer-font: #ffffff;
+  --button-hover: #188ce8;
+}
+
+body {
+  background-color: var(--white-color);
+  color: var(--main-color-text);
+  font-family: var(--primary-font);
+  letter-spacing: 0.03em;
+}
+
+
 .list {
   list-style: none;
 }
@@ -13,23 +35,6 @@ button {
   cursor: pointer;
   font-family: inherit;
 }
-:root {
-  --main-color-text: #212121;
-  --secondary-color-text: #757575;
-  --accent-color: #2196f3;
-  --white-color: #ffffff;
-  --team-background: #f5f4fa;
-  --hero-background: #2f303a;
-  --port-button: #f5f4fa;
-  --primary-font: roboto, sans-serif;
-}
-
-body {
-  background-color: var(--white-color);
-  color: var(--main-color-text);
-  font-family: var(--primary-font);
-  letter-spacing: 0.03em;
-}
 
 /* header */
 
@@ -43,11 +48,11 @@ body {
 }
 
 .logo-header {
-  color: #000000;
+  color: var(--header-font);
 }
 
 .logo-footer {
-  color: #ffffff;
+  color: var(--footer-font);
 }
 
 /* Navigation  */
@@ -81,6 +86,12 @@ body {
 .auth-nav .link:focus {
   color: var(--accent-color);
 }
+
+.link-email,
+.link-phone {
+  color: var(--secondary-color-text);
+}
+
 
 /* Hero  */
 
@@ -136,7 +147,6 @@ button:hover {
 }
 
 .feature-text {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   color: var(--secondary-color-text);
@@ -145,11 +155,11 @@ button:hover {
 /* Section */
 
 .section {
-  background-color: #f5f4fa;
+  background-color: var(--port-button);
 }
 
 .section-card {
-  background-color: #ffffff;
+  background-color: var(--footer-font);
   cursor: pointer;
 }
 
@@ -166,7 +176,6 @@ button:hover {
   color: var(--main-color-text);
 }
 .section-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
   color: var(--secondary-color-text);
@@ -186,12 +195,12 @@ address .link {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  color: var(--secondary-color-text);
+  color: var(--footer-font);
 }
 
 address .link-email,
 address .link-phone {
-  color: var(--white-color);
+  color: var(--secondary-color-text);
   text-decoration: none;
   font-style: normal;
   font-weight: 400;
@@ -214,9 +223,13 @@ a {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  letter-spacing: 0.03em;
   color: var(--main-color-text);
   background-color: var(--port-button);
+}
+
+.port-btn:focus {
+  background-color: #188ce8;
+  color: var(--white-color);
 }
 
 .porthead {
@@ -241,7 +254,6 @@ a {
 
 
 .porttext {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   color: var(--secondary-color-text);
